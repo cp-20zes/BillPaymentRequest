@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_t80-YH-GEe294cN2Vx6PBQ" name="MyDiagram" bonitaModelVersion="7.12.0-004">
+  <process:MainProcess xmi:id="_t80-YH-GEe294cN2Vx6PBQ" name="BillPaymentRequestDiagram" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_t80-YX-GEe294cN2Vx6PBQ" name="BillPaymentRequest">
       <elements xmi:type="process:Lane" xmi:id="_t80-Yn-GEe294cN2Vx6PBQ" name="Employee lane" actor="_t80-e3-GEe294cN2Vx6PBQ">
         <elements xmi:type="process:StartEvent" xmi:id="_t80-Y3-GEe294cN2Vx6PBQ" name="Payment request" outgoing="_t80-eH-GEe294cN2Vx6PBQ">

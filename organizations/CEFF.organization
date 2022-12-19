@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="CEFF">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="JOS">
+      <firstName>Joachim</firstName>
+      <lastName>Stalder</lastName>
+      <title>Mr</title>
+      <jobTitle>IT Teacher</jobTitle>
+      <manager>jacques.hirtzel</manager>
+      <personalData/>
+      <professionalData>
+        <email>joachim.stalder@ceff.com</email>
+      </professionalData>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="JHI">
+      <firstName>Jacques</firstName>
+      <lastName>Hirtzel</lastName>
+      <title>Mr</title>
+      <jobTitle>Head of IT department</jobTitle>
+      <manager>tino.cocco</manager>
+      <personalData/>
+      <professionalData>
+        <email>jacques.hirtzel@ceff.com</email>
+      </professionalData>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="TIC">
+      <firstName>Tino</firstName>
+      <lastName>Cocco</lastName>
+      <title>Mr</title>
+      <jobTitle>Head of industry domain</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>tino.cocco@ceff.com</email>
+      </professionalData>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="teacher">
+      <displayName>Teacher</displayName>
+    </role>
+    <role name="headOfDepartment">
+      <displayName>Head of department</displayName>
+    </role>
+    <role name="headOfDomain">
+      <displayName>Head of domain</displayName>
+    </role>
+    <role name="approver">
+      <displayName>Approver</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="CEFF">
+      <displayName>CEFF</displayName>
+    </group>
+    <group name="Finance" parentPath="/CEFF">
+      <displayName>Finance</displayName>
+    </group>
+    <group name="hr" parentPath="/CEFF">
+      <displayName>Human Resources</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>jacques.hirtzel</userName>
+      <roleName>approver</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/CEFF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>tino.cocco</userName>
+      <roleName>headOfDomain</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/CEFF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>joachim.stalder</userName>
+      <roleName>teacher</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/CEFF</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

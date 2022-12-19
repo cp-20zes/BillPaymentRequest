@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_t80-YH-GEe294cN2Vx6PBQ" name="MyDiagram" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_t80-YX-GEe294cN2Vx6PBQ" name="Pool">
+    <elements xmi:type="process:Pool" xmi:id="_t80-YX-GEe294cN2Vx6PBQ" name="BillPaymentRequest">
       <elements xmi:type="process:Lane" xmi:id="_t80-Yn-GEe294cN2Vx6PBQ" name="Employee lane" actor="_t80-e3-GEe294cN2Vx6PBQ">
         <elements xmi:type="process:StartEvent" xmi:id="_t80-Y3-GEe294cN2Vx6PBQ" name="Payment request" outgoing="_t80-eH-GEe294cN2Vx6PBQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_t80-ZH-GEe294cN2Vx6PBQ" name="" content="" returnTypeFixed="true"/>
@@ -21,7 +21,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_MHkesH-HEe294cN2Vx6PBQ" name="00:00:05" content="5000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_t80-cH-GEe294cN2Vx6PBQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_t80-cX-GEe294cN2Vx6PBQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_M75XQH-KEe21hoJdyQV7wA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_t80-cn-GEe294cN2Vx6PBQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_t80-c3-GEe294cN2Vx6PBQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -78,7 +78,7 @@
         </elements>
       </elements>
       <formMapping xmi:type="process:FormMapping" xmi:id="_t80-dH-GEe294cN2Vx6PBQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_t80-dX-GEe294cN2Vx6PBQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_M75XQX-KEe21hoJdyQV7wA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_t80-dn-GEe294cN2Vx6PBQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_t80-d3-GEe294cN2Vx6PBQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

@@ -12,6 +12,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_t80-aH-GEe294cN2Vx6PBQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_t80-aX-GEe294cN2Vx6PBQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_t80-an-GEe294cN2Vx6PBQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_mYWW4IBjEe2wn8PO3mfxxA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mYWW4YBjEe2wn8PO3mfxxA" name="request" content="request" type="TYPE_VARIABLE" returnType="com.company.model.BillPaymentRequest">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mYWW4oBjEe2wn8PO3mfxxA" name="request" dataType="_t80-lH-GEe294cN2Vx6PBQ" className="com.company.model.BillPaymentRequest"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mYWW44BjEe2wn8PO3mfxxA" name="requestInput.isApproved" content="requestInput?.isApproved" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mYWW5IBjEe2wn8PO3mfxxA" name="requestInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mYWW5YBjEe2wn8PO3mfxxA" type="JAVA_METHOD" expression="setIsApproved">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_t80-a3-GEe294cN2Vx6PBQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_t80-bH-GEe294cN2Vx6PBQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_t80-bX-GEe294cN2Vx6PBQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -23,7 +34,11 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_t80-cH-GEe294cN2Vx6PBQ">
             <targetForm xmi:type="expression:Expression" xmi:id="_WR2T0H-nEe21hoJdyQV7wA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_t80-cn-GEe294cN2Vx6PBQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_t80-cn-GEe294cN2Vx6PBQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_mYSFcIBjEe2wn8PO3mfxxA" name="requestInput" type="COMPLEX" dataReference="request" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_mYSFcYBjEe2wn8PO3mfxxA" name="isApproved" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_t80-c3-GEe294cN2Vx6PBQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_1XUaAH-GEe294cN2Vx6PBQ" name="Request approved ?" outgoing="_3duF0H-GEe294cN2Vx6PBQ _4wn4IH-GEe294cN2Vx6PBQ" incoming="_0_IjgH-GEe294cN2Vx6PBQ">

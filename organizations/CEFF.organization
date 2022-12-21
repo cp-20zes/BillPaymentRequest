@@ -7,7 +7,7 @@
       <lastName>Stalder</lastName>
       <title>Mr</title>
       <jobTitle>IT Teacher</jobTitle>
-      <manager>jacques.hirtzel</manager>
+      <manager>JHI</manager>
       <personalData/>
       <professionalData>
         <email>joachim.stalder@ceff.com</email>
@@ -20,7 +20,7 @@
       <lastName>Hirtzel</lastName>
       <title>Mr</title>
       <jobTitle>Head of IT department</jobTitle>
-      <manager>tino.cocco</manager>
+      <manager>TIC</manager>
       <personalData/>
       <professionalData>
         <email>jacques.hirtzel@ceff.com</email>
@@ -84,6 +84,21 @@
       <roleName>teacher</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/CEFF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>JOS</userName>
+      <roleName>teacher</roleName>
+      <groupName>CEFF</groupName>
+    </membership>
+    <membership>
+      <userName>JHI</userName>
+      <roleName>headOfDepartment</roleName>
+      <groupName>CEFF</groupName>
+    </membership>
+    <membership>
+      <userName>TIC</userName>
+      <roleName>headOfDomain</roleName>
+      <groupName>CEFF</groupName>
     </membership>
   </memberships>
 </organization:Organization>

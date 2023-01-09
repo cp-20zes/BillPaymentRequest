@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
-    <application token="bill-payment-request" version="1.0" profile="User" homePage="bill-payment-request" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
-        <displayName>Leave requests application</displayName>
+    <application token="bill-payment-request" version="1.0" profile="User" homePage="follow-up-applications" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Bill payment application</displayName>
         <applicationPages>
-            <applicationPage customPage="custompage_BillPaymentRequestStatus" token="bill-payment-request"/>
+            <applicationPage customPage="custompage_BillPaymentRequestStatus" token="follow-up-applications"/>
         </applicationPages>
         <applicationMenus>
-            <applicationMenu applicationPage="bill-payment-request">
-                <displayName>Requests follow-up</displayName>
+            <applicationMenu applicationPage="follow-up-applications">
+                <displayName>Follow-up of requests</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>

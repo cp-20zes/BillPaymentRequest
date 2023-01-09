@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "BillPaymentRequestStatus",
   "name" : "BillPaymentRequestStatus",
-  "lastUpdate" : 1671636583842,
+  "lastUpdate" : 1673262022598,
   "rows" : [
     [
       {
@@ -39,7 +39,7 @@
             "value" : "center"
           }
         },
-        "reference" : "e0633ec8-56ff-43aa-b28e-7fcc976e78ee",
+        "reference" : "69b5ca27-97b7-410d-a5aa-7bc8f62dd4aa",
         "hasValidationError" : false,
         "id" : "pbTitle"
       }
@@ -63,7 +63,7 @@
             "value" : false
           }
         },
-        "reference" : "16fcc73f-bef4-4534-83ec-67afa30cecf9",
+        "reference" : "7407d8bc-15e9-4c52-a116-8e646a154893",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -72,7 +72,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "03a34551-0860-4d48-9a6a-265137cc687b",
+          "reference" : "90332494-a18d-40d8-ab5b-2e32fc493495",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -152,7 +152,7 @@
                     "value" : 1
                   }
                 },
-                "reference" : "db1c0c41-4597-4c9b-9f80-59f22d439bd8",
+                "reference" : "e20466ef-ae8c-45c2-a75a-3f1c1d4d793f",
                 "hasValidationError" : false,
                 "id" : "pbInput"
               },
@@ -231,7 +231,7 @@
                     "value" : 1
                   }
                 },
-                "reference" : "9503380e-2fa6-474b-bb9a-99088dbf12ac",
+                "reference" : "9fc84867-c8c1-4a66-a1a5-5f42b1fbff5b",
                 "hasValidationError" : false,
                 "id" : "pbInput"
               }
@@ -264,7 +264,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "New bill payment request"
+                    "value" : "Create a new request"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -284,7 +284,7 @@
                   },
                   "url" : {
                     "type" : "interpolation",
-                    "value" : "../API/bpm/process/{{informationDefinitionProcessus[0].id}}/instantiation"
+                    "value" : "../API/bpm/process/{{definitionProcessInformation[0].id}}/instantiation"
                   },
                   "responseStatusCode" : {
                     "type" : "variable"
@@ -325,7 +325,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "348ba0be-4106-4c3e-87e9-af80904d7a28",
+                "reference" : "60253a52-1b3c-4507-b9e3-6e7c4cac0e59",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -360,7 +360,7 @@
             "value" : 12
           }
         },
-        "reference" : "03ec0a29-12da-489e-8a2f-7fa7a1773455",
+        "reference" : "5d111e57-5886-4a6f-9fe3-5a828b12fbce",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "description" : "Auto generate ui for business object \"com.company.model.BillPaymentRequest\"",
@@ -384,7 +384,7 @@
                   "type" : "variable"
                 }
               },
-              "reference" : "c7c10a39-c045-4106-a963-d40d383563e0",
+              "reference" : "55685636-bcf9-4d0b-85bc-4678c0c20243",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "description" : "\"com.company.model.BillPaymentRequest\" object from \"billPaymentRequest\" variable",
@@ -428,7 +428,7 @@
                         "value" : false
                       }
                     },
-                    "reference" : "8aed28d6-c5c3-4fee-ba41-6970ec9cfda5",
+                    "reference" : "fd5d99fd-2648-42fc-b85e-9afe51e2d20e",
                     "hasValidationError" : false,
                     "id" : "pbTitle",
                     "description" : ""
@@ -447,9 +447,9 @@
                       "headers" : {
                         "type" : "constant",
                         "value" : [
-                          "Amount of the bill",
+                          "Amount",
                           "Description",
-                          "Is Approved"
+                          "Status"
                         ]
                       },
                       "allowHtml" : {
@@ -481,7 +481,7 @@
                         "value" : [
                           "amount",
                           "description",
-                          "isApproved"
+                          "isApprovedLabel"
                         ]
                       },
                       "dimension" : {
@@ -505,7 +505,7 @@
                         "value" : true
                       }
                     },
-                    "reference" : "8d558f8d-1a93-47d3-98fb-8a3b157e68dc",
+                    "reference" : "5931386a-29ec-473c-8288-67b00550879f",
                     "hasValidationError" : false,
                     "id" : "pbTable",
                     "description" : ""
@@ -537,7 +537,7 @@
                         "value" : 1
                       }
                     },
-                    "reference" : "0e42370a-f5b4-4dd6-bf89-9dbee8cf06c8",
+                    "reference" : "dbe3eb86-9b65-4789-b612-d09baa8076b3",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "rows" : [
@@ -569,7 +569,7 @@
                         "value" : 11
                       }
                     },
-                    "reference" : "74841bd1-8f75-4e3b-9295-c9a8bba21c44",
+                    "reference" : "7721583b-f4cd-4565-9b4d-b9b61c214050",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "description" : "Display \"BillPaymentRequest\" details when a line is selected in the table above",
@@ -610,10 +610,11 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Amount of the bill"
+                              "value" : "Amount"
                             },
                             "placeholder" : {
-                              "type" : "constant"
+                              "type" : "constant",
+                              "value" : "Amount of the bill"
                             },
                             "type" : {
                               "type" : "constant",
@@ -654,7 +655,7 @@
                               "value" : 1
                             }
                           },
-                          "reference" : "98a65c12-8651-4d93-ad20-b45a60cc67f9",
+                          "reference" : "92d11e12-1f96-4a69-ad89-380f06abcf35",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -740,7 +741,7 @@
                               "value" : 1
                             }
                           },
-                          "reference" : "24f0f4e2-982c-45d4-b87c-c72cd924edb1",
+                          "reference" : "c9c0ae3d-cf70-4756-b08f-6a4c74d720fc",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -783,9 +784,17 @@
                             "value" : {
                               "type" : "variable",
                               "value" : "billPaymentRequest_selected.isApproved"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : false
                             }
                           },
-                          "reference" : "f43ee784-4f19-4d22-aecd-57a8ebc60763",
+                          "reference" : "36ba72ed-5412-41a5-a5ff-fec1beeba118",
                           "hasValidationError" : false,
                           "id" : "pbCheckbox",
                           "description" : ""
@@ -803,14 +812,14 @@
   ],
   "assets" : [
     {
-      "id" : "a356a422-5044-4d86-945d-8dfb01426c30",
+      "id" : "9025f720-4363-47fb-a08a-7eae6a0d740d",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1b8224ed-907b-484b-ac8e-3e16dfc3771c",
+      "id" : "f8091561-0609-4930-a201-4aa9eebf143d",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -819,10 +828,17 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/unusedId"
+      ],
+      "exposed" : false
+    },
     "billPaymentRequest" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [com.company.model.BillPaymentRequest]\",\"businessObjectName\":\"BillPaymentRequest\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.BillPaymentRequest\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"findByRequestorId [com.company.model.BillPaymentRequest]\",\"businessObjectName\":\"BillPaymentRequest\",\"query\":{\"name\":\"findByRequestorId\",\"displayName\":\"findByRequestorId\"},\"id\":\"com.company.model.BillPaymentRequest\",\"filters\":[{\"name\":\"requestorId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{sessionInfo.user_id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },
@@ -840,23 +856,42 @@
         "  requestInput : {\r",
         "    amount : null,\r",
         "    description : null,\r",
-        "    requestorId : $data.billPaymentRequest.user_id\r",
+        "    requestorId : $data.sessionInfo.user_id\r",
         "  }\r",
         "};\r",
         "return request;"
       ],
       "exposed" : false
     },
-    "informationDefinitionProcessus" : {
+    "addLibelStatusRequestConges" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.hasOwnProperty('billPaymentRequest') && $data.billPaymentRequest) {\r",
+        "  for (let request of $data.billPaymentRequest) {\r",
+        "    if(request.isApproved)  {\r",
+        "      request.isApprovedLabel = \"Approved\";\r",
+        "    } else if(request.isApproved === false) {\r",
+        "      request.isApprovedLabel = \"Refused\";\r",
+        "    } else {\r",
+        "      request.isApprovedLabel = \"In progress\";\r",
+        "    }\r",
+        "  }\r",
+        "}\r",
+        "\r",
+        "return $data.billPaymentRequest;"
+      ],
+      "exposed" : false
+    },
+    "definitionProcessInformation" : {
       "type" : "url",
       "value" : [
-        "./API/bpm/process?p=0&c=100&o=version%20DESC&f=name=BillPaymentRequest"
+        "../API/bpm/process?p=0&c=100&o=version%20DESC&f=name=BillPaymentRequest"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "0e812755-1023-41a4-beb6-2f2db3f14191",
+  "uuid" : "1c226e58-9262-4910-ba4e-dab73624dc0b",
   "type" : "page",
   "description" : "Page generated with Bonita UI designer"
 }
